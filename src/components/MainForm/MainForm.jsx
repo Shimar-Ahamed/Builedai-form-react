@@ -48,7 +48,10 @@ const MainForm = () => {
     const field = fields[index];
     return (
       <div className="form-group">
-        <button className="close-btn" onClick={() => setActiveSection('sidebar')}>X</button>
+        <div className="editor-header">
+          <h3>Edit {field.type} Field</h3>
+          <button className="close-btn" onClick={() => setActiveSection('sidebar')}>X</button>
+        </div>
         <div className="form-group">
           <label>Title:</label>
           <input
@@ -88,6 +91,11 @@ const MainForm = () => {
       <div className="sidebar">
         {activeSection === 'sidebar' ? (
           <>
+            <div className="sidebar-header">
+              <h2>Sidebar</h2>
+              <button className="close-btn" onClick={() => setActiveSection('sidebar')}>X</button>
+            </div>
+
             <div className="sidebar-menu">
               <ul>
                 <li>Content</li>

@@ -109,14 +109,14 @@
     height: 100vh;
     background-color: #f7f7f7;
     padding: 20px;
-    padding-top: 40px; /* Add padding to the top to accommodate the close button */
+    padding-top: 40px; /* Adjust this to accommodate other elements if necessary */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    position: relative; 
+    position: relative; /* Ensure relative positioning */
     height: 100%;
-  }
+}
   
   .form-group {
     margin-bottom: 15px;
@@ -230,11 +230,12 @@
     font-size: 24px;
     color: #ff6b6b;
     cursor: pointer;
-    position: absolute; /* Position absolutely within the sidebar */
+    position: absolute; /* Keep this */
     top: 10px; /* Adjust as needed */
     right: 10px; /* Adjust as needed */
     z-index: 10; /* Ensure it's above other content */
-  }
+}
+  
 
   .modal-overlay {
     position: fixed;
@@ -255,17 +256,19 @@
     border-radius: 10px;
     width: 500px;
     text-align: center;
+    position: relative; /* Add this line */
   }
   
   .close-modal {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 10px; /* Adjust if necessary */
+    right: 10px; /* Adjust if necessary */
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
   }
+  
   
   .field-options {
     display: flex;
